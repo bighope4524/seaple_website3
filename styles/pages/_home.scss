@@ -293,9 +293,14 @@ main {
                 margin: 0 auto;
                 display: flex;
                 justify-content: space-between;
-
                 & .koumoku {
 
+                }
+                & .center {
+                    margin: 0 auto;
+                    @include mq(md) {
+                        margin-bottom: 15px;
+                    }
                 }
                 & .sub-koumoku {
 
@@ -371,10 +376,6 @@ main {
                 height: 42px;
                 margin-bottom: 25px;
             }
-
-            &__inner {
-                margin-bottom: 20px;
-            }
         }
         &__p {
             margin-bottom: 20px;
@@ -385,13 +386,22 @@ main {
 
         &-list1, &-list2 {
             width: 80%;
-            @extend .m_font_md;
             margin-bottom: 20px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
-            & .list-name { }
-            & .list-price { }
+            & .list-name {
+                @extend .m_font_md;
+                @include mq(md) {
+                    font-size: 16px;
+                }
+             }
+            & .list-price {
+                @extend .m_font_md;
+                @include mq(md) {
+                    font-size: 16px;
+                }
+            }
         }
         &-option {
             width: 90%;
@@ -455,7 +465,7 @@ main {
         padding-top: $navHeight;
         margin-top: $minusNavHeight;
     }
-    @extend .content-width;
+    @extend .content-width;  
 
     &__inner {
         width: 100%;
@@ -482,52 +492,55 @@ main {
         & .instructor {
             text-align: center;
             justify-content: center;
-            &__title, & .instructors-status {
-                display: block;
-                font-size: 18px;
-                line-height: 32px;
-                height: 32px;
-                margin-bottom: 10px;
-                background: lightblue;
-    
-                @include mq(lg) {
-                    font-size: 23px;
-                    line-height: 40px;
-                    height: 40x;
-                    margin-bottom: 25px;
+            & .license {
+                &__title, & .instructors-status {
+                    display: block;
+                    font-size: 18px;
+                    line-height: 32px;
+                    height: 32px;
+                    margin-bottom: 10px;
+                    background: lightblue;
+        
+                    @include mq(lg) {
+                        font-size: 23px;
+                        line-height: 40px;
+                        height: 40x;
+                        margin-bottom: 25px;
+                    }
                 }
-            }
-            & .issuing-member {
-                width: 80%;
-                margin: 0 auto;
-                margin-bottom: 15px;
-            }
-            & .joining-group {
-                width: 80%;
-                margin: 0 auto;
-                margin-bottom: 15px;
-            }
-            & .onetime-2get {
-                width: 80%;
-                margin: 0 auto;
-                text-align: center;
-                color: $cBlue;
-                margin-bottom: 15px;
-            }
-            & .instructors-status {
-                margin-bottom: 15px;
+                & .issuing-member {
+                    width: 80%;
+                    margin: 0 auto;
+                    margin-bottom: 15px;
+                }
+                & .joining-group {
+                    width: 80%;
+                    margin: 0 auto;
+                    margin-bottom: 15px;
+                }
+                & .onetime-2get {
+                    width: 80%;
+                    margin: 0 auto;
+                    text-align: center;
+                    color: $cBlue;
+                    margin-bottom: 15px;
+                }
+                & .instructors-status {
+                    margin-bottom: 15px;
+                }
             }
             & .profile {
                 @include mq(md) {
-                    margin-top: 25px;
                     display: flex;
+                    justify-content: space-between;
                 }
                 &__photo {
-                    max-width: 25%;
+                    max-width: 40%;
                     @include mq(md) {
                         margin-top: 30px;
                         max-width: 20%;
-                        margin-left: 20px;
+                        margin-left: 100px;
+                        margin-right: 70px;
                     }
                     vertical-align: bottom;
                     margin: 0 auto;
@@ -541,15 +554,25 @@ main {
                     }
                     margin-bottom: 20px;
                 }
-                & .instructors-status__title {
-                    width: 80%;
-                    margin: 0 auto;
-                    margin-bottom: 15px;
+                &__group {
+
+                    & .detail {
+                        max-width: 100%;
+                        @include mq(md) {
+                            margin-right: 70px;
+                        }
+                        & .instructors-status__title {
+                            @include mq(md) {
+                                margin-right: 50px;
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
                 }
             }
         }
         & .address {
-            // margin-top: 15px;
+            margin-top: 15px;
             text-align: center;
             font-size: 18px;
             font-weight: 600;
