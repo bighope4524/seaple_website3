@@ -500,7 +500,10 @@ main {
                     height: 32px;
                     margin-bottom: 10px;
                     background: lightblue;
+<<<<<<< HEAD:styles/pages/_home.scss
         
+=======
+>>>>>>> refs/remotes/origin/master:src/styles/pages/_home.scss
                     @include mq(lg) {
                         font-size: 23px;
                         line-height: 40px;
@@ -540,6 +543,10 @@ main {
                         margin-top: 30px;
                         max-width: 20%;
                         margin-left: 100px;
+<<<<<<< HEAD:styles/pages/_home.scss
+=======
+                        margin-right: 70px;
+>>>>>>> refs/remotes/origin/master:src/styles/pages/_home.scss
                     }
                     vertical-align: bottom;
                     margin: 0 auto;
@@ -554,10 +561,14 @@ main {
                     margin-bottom: 20px;
                 }
                 &__group {
+<<<<<<< HEAD:styles/pages/_home.scss
                     // @include mq(md) {
                     //     display: flex;
                     //     justify-content: space-between;
                     // }
+=======
+
+>>>>>>> refs/remotes/origin/master:src/styles/pages/_home.scss
                     & .detail {
                         max-width: 100%;
                         @include mq(md) {
