@@ -1,0 +1,6 @@
+{
+  "liveServer.settings.port": 5502,
+  // "vscode_custom_css.imports": ["file:///Users/ta1fukumoto/.vscode/styles.css"],
+  "vscode_custom_css.imports": ["file:///Users/Neo/.vscode/styles.css"],
+  "vscode_custom_css.policy": true
+}

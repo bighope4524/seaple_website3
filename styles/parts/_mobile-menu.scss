@@ -92,6 +92,8 @@ $cMenuOpen: $cBlack;
 }
 
 .menu-open {
+  pointer-events: auto;
+  cursor: pointer;
   & #container {
     transform: translate(-300px, 60px);
     box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);

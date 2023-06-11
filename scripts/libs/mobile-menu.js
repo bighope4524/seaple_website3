@@ -10,9 +10,14 @@ class MobileMenu {
     this._addEvent();
   }
 
+
   _getEventType() {
-    const isTouchCapable = "ontouchstart" in window ||
-    (window.DocumentTouch && document instanceof DocumentTouch);
+    const isTouchCapable = 'ontouchstart' in window ||
+            window.DocumentTouch && document instanceof window.DocumentTouch ||
+            navigator.maxTouchPoints > 0 ||
+            window.navigator.msMaxTouchPoints > 0;
+    // const isTouchCapable = "ontouchstart" in window ||
+    // (window.DocumentTouch && document instanceof DocumentTouch);
     return isTouchCapable ? "touchstart" : "click";
   }
 

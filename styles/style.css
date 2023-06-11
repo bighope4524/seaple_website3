@@ -642,7 +642,7 @@ img {
   }
 }
 
-.m_font_md, .training__inner .sub-title, .training__inner .sub-title__inner, .tour__inner-list1, .tour__inner-list2 {
+.m_font_md, .training__inner .sub-title, .training__inner .sub-title__inner, .tour__inner-list1 .list-name, .tour__inner-list2 .list-name, .tour__inner-list1 .list-price, .tour__inner-list2 .list-price {
   font-size: 14px;
 }
 
@@ -744,6 +744,10 @@ img {
   text-decoration: none !important;
 }
 
+.menu-open {
+  pointer-events: auto;
+  cursor: pointer;
+}
 .menu-open #container {
   transform: translate(-300px, 60px);
   box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
@@ -1145,6 +1149,14 @@ main {
     font-size: 16px;
   }
 }
+.training__inner .sub-title__inner .center {
+  margin: 0 auto;
+}
+@media screen and (min-width: 600px) {
+  .training__inner .sub-title__inner .center {
+    margin-bottom: 15px;
+  }
+}
 @media screen and (min-width: 600px) {
   .training__inner .sub-title__inner {
     width: 70%;
@@ -1213,9 +1225,6 @@ main {
     margin-bottom: 25px;
   }
 }
-.tour__inner__title__inner {
-  margin-bottom: 20px;
-}
 .tour__inner__p {
   margin-bottom: 20px;
 }
@@ -1230,6 +1239,16 @@ main {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 600px) {
+  .tour__inner-list1 .list-name, .tour__inner-list2 .list-name {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .tour__inner-list1 .list-price, .tour__inner-list2 .list-price {
+    font-size: 16px;
+  }
 }
 .tour__inner-option {
   width: 90%;
@@ -1316,7 +1335,7 @@ main {
   text-align: center;
   justify-content: center;
 }
-.main__office__inner .instructor__title, .main__office__inner .instructor .instructors-status {
+.main__office__inner .instructor .license__title, .main__office__inner .instructor .license .instructors-status {
   display: block;
   font-size: 18px;
   line-height: 32px;
@@ -1325,41 +1344,41 @@ main {
   background: lightblue;
 }
 @media screen and (min-width: 960px) {
-  .main__office__inner .instructor__title, .main__office__inner .instructor .instructors-status {
+  .main__office__inner .instructor .license__title, .main__office__inner .instructor .license .instructors-status {
     font-size: 23px;
     line-height: 40px;
     height: 40x;
     margin-bottom: 25px;
   }
 }
-.main__office__inner .instructor .issuing-member {
+.main__office__inner .instructor .license .issuing-member {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 15px;
 }
-.main__office__inner .instructor .joining-group {
+.main__office__inner .instructor .license .joining-group {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 15px;
 }
-.main__office__inner .instructor .onetime-2get {
+.main__office__inner .instructor .license .onetime-2get {
   width: 80%;
   margin: 0 auto;
   text-align: center;
   color: blue;
   margin-bottom: 15px;
 }
-.main__office__inner .instructor .instructors-status {
+.main__office__inner .instructor .license .instructors-status {
   margin-bottom: 15px;
 }
 @media screen and (min-width: 600px) {
   .main__office__inner .instructor .profile {
-    margin-top: 25px;
     display: flex;
+    justify-content: space-between;
   }
 }
 .main__office__inner .instructor .profile__photo {
-  max-width: 25%;
+  max-width: 40%;
   vertical-align: bottom;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -1368,7 +1387,7 @@ main {
   .main__office__inner .instructor .profile__photo {
     margin-top: 30px;
     max-width: 20%;
-    margin-left: 20px;
+    margin-left: 100px;
   }
 }
 .main__office__inner .instructor .profile__photo .photo {
@@ -1379,12 +1398,22 @@ main {
 .main__office__inner .instructor .profile__photo .name {
   font-weight: 900;
 }
-.main__office__inner .instructor .profile .instructors-status__title {
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 15px;
+.main__office__inner .instructor .profile__group .detail {
+  max-width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .main__office__inner .instructor .profile__group .detail {
+    margin-right: 70px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .main__office__inner .instructor .profile__group .detail .instructors-status__title {
+    margin-right: 50px;
+    margin-bottom: 15px;
+  }
 }
 .main__office__inner .address {
+  margin-top: 15px;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
