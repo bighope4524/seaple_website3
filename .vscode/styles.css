@@ -3,10 +3,8 @@
 .monaco-icon-label>.monaco-icon-label-container>.monaco-icon-name-container>.label-name,
 .monaco-icon-label>.monaco-icon-label-container>.monaco-icon-description-container>.label-description,
 .search-view .linematch>.match {
-<<<<<<< HEAD
-  font-family: "Noto Sans Mono CJK JP" !important;
-=======
-  font-family: "Noto Sans Mono CJK JP Bold" !important;
   /* font-family: "Fira Code" !important; */
->>>>>>> refs/remotes/origin/master
+  font-family: "San Francisco" !important;
+  font-size: 18px !important;
+  font-weight: 400;
 }
